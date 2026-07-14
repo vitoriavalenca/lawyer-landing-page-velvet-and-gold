@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pollyana Valença — Advocacia Cível, Previdenciária, Trabalhista e Família | OAB/TO 13.057</title>
+<meta name="description" content="Advogada em Tocantins atuando em Direito Civil, Previdenciário, Trabalhista e de Família. Também atende escritórios de advocacia como correspondente jurídica em Guaraí, Palmas e Porto Nacional.">
+<meta property="og:title" content="Pollyana Valença — Advocacia">
+<meta property="og:description" content="Direito Civil, Previdenciário, Trabalhista e Família em Tocantins. Correspondente jurídica para escritórios.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-dark: #1D0F12;
+    --bg-dark-2: #291619;
+    --paper: #F6ECE6;
+    --paper-alt: #EDDAD2;
+    --ink: #2B1216;
+    --ink-soft: #6E4E48;
+    --cream: #FBF6EC;
+    --cream-dim: #E7DCC8;
+    --wine: #8C2331;
+    --wine-bright: #B23A46;
+    --wine-deep: #4A1017;
+    --gold: #C9A15A;
+    --gold-bright: #A9803C;
+    --gold-onDark: #E2C077;
+    --line: rgba(43,18,22,0.14);
+    --line-dark: rgba(251,246,236,0.12);
+    --radius: 14px;
+    --radius-sm: 8px;
+    --max: 1160px;
+    --shadow: 0 24px 48px rgba(43,18,22,0.16);
+    --shadow-soft: 0 10px 30px rgba(43,18,22,0.14);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important;}
+  }
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    margin:0;
+    color:var(--ink);
+    letter-spacing:-0.01em;
+  }
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 24px;}
+  @media (min-width:640px){ .wrap{ padding:0 32px; } }
+
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--gold-bright);
+    margin-bottom:14px;
+    display:block;
+  }
+  .on-dark .eyebrow{ color:var(--gold-onDark); }
+
+  :focus-visible{ outline: 2px solid var(--gold-bright); outline-offset: 3px; }
+
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:15px 26px;
+    font-size:14.5px;
+    font-weight:600;
+    text-decoration:none;
+    border-radius:100px;
+    transition: all .25s ease;
+    border:1.5px solid transparent;
+    cursor:pointer;
+    font-family:'Inter', sans-serif;
+    white-space:nowrap;
+  }
+  .btn-primary{ background:var(--gold); color:var(--ink); }
+  .btn-primary:hover{ background:#D8B36C; transform:translateY(-2px); box-shadow:var(--shadow-soft); }
+  .btn-outline{ background:transparent; border-color:rgba(251,246,236,0.4); color:var(--cream); }
+  .btn-outline:hover{ border-color:var(--gold-onDark); color:var(--gold-onDark); }
+  .btn-outline-ink{ background:transparent; border-color:var(--wine); color:var(--wine); }
+  .btn-outline-ink:hover{ background:var(--wine); color:var(--cream); }
+
+  /* reveal on scroll */
+  .reveal{ opacity:0; transform:translateY(26px); transition:opacity .7s ease, transform .7s ease; }
+  .reveal.in-view{ opacity:1; transform:translateY(0); }
+  .reveal.d1.in-view{ transition-delay:.08s; }
+  .reveal.d2.in-view{ transition-delay:.16s; }
+  .reveal.d3.in-view{ transition-delay:.24s; }
+  .reveal.d4.in-view{ transition-delay:.32s; }
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:sticky; top:0; z-index:80;
+    background:rgba(29,15,18,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line-dark);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 24px;
+    max-width:var(--max); margin:0 auto;
+  }
+  @media (min-width:640px){ .nav{ padding:18px 32px; } }
+  .brand{
+    display:flex; align-items:center; gap:11px;
+    font-family:'Fraunces', serif; font-weight:700; font-size:18px;
+    color:var(--cream); text-decoration:none;
+  }
+  /* LOGO: troque o conteudo de .brand-mark por
+     <img src="logo.png" alt="Logo" style="width:100%;height:100%;object-fit:contain;"> */
+  .brand-mark{
+    width:34px; height:34px; border-radius:50%;
+    border:1.5px dashed var(--gold-onDark);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'JetBrains Mono', monospace; font-size:10.5px; color:var(--gold-onDark);
+    flex-shrink:0; overflow:hidden;
+  }
+  nav.links{ display:flex; gap:30px; align-items:center; font-size:14px; font-weight:500; }
+  nav.links a.nav-link{ text-decoration:none; color:var(--cream-dim); transition:color .2s ease; }
+  nav.links a.nav-link:hover{ color:var(--gold-onDark); }
+
+  .menu-toggle{
+    display:none; background:none; border:1px solid var(--line-dark); color:var(--cream);
+    width:40px; height:40px; border-radius:50%; align-items:center; justify-content:center;
+    cursor:pointer; flex-shrink:0;
+  }
+  .mobile-panel{
+    display:none;
+    position:absolute; top:100%; left:0; right:0;
+    background:var(--bg-dark);
+    border-bottom:1px solid var(--line-dark);
+    flex-direction:column;
+    padding:8px 24px 20px;
+  }
+  .mobile-panel.open{ display:flex; }
+  .mobile-panel a{
+    padding:14px 0; text-decoration:none; color:var(--cream-dim);
+    border-bottom:1px solid var(--line-dark); font-size:15px;
+  }
+  .mobile-panel a:last-child{ border-bottom:none; }
+
+  @media (max-width:900px){
+    nav.links .nav-link{ display:none; }
+    .menu-toggle{ display:flex; }
+  }
+
+  /* ---------- HERO (dark) ---------- */
+  .hero{ background:var(--bg-dark); position:relative; overflow:hidden; padding:56px 0 0; }
+  .hero-grid{ display:grid; grid-template-columns:1fr 0.9fr; gap:40px; align-items:center; }
+  @media (max-width:900px){ .hero-grid{ grid-template-columns:1fr; gap:32px; } }
+
+  .hero-eyebrow{
+    font-family:'JetBrains Mono', monospace; font-size:11.5px; letter-spacing:0.12em;
+    text-transform:uppercase; color:var(--gold-onDark); margin-bottom:18px; display:inline-block;
+  }
+  .hero h1{ font-size:clamp(32px, 5.2vw, 54px); line-height:1.1; margin-bottom:20px; color:var(--cream); }
+  .hero h1 em{ font-style:normal; color:var(--gold-onDark); }
+  .hero p.lead{ font-size:16.5px; color:var(--cream-dim); max-width:44ch; margin-bottom:30px; }
+  .hero-actions{ display:flex; gap:14px; flex-wrap:wrap; margin-bottom:36px; }
+
+  .hero-contact{ display:flex; gap:24px; row-gap:16px; flex-wrap:wrap; }
+  .hero-contact .item{ display:flex; align-items:center; gap:10px; font-size:13px; color:var(--cream-dim); text-decoration:none; transition:opacity .2s ease; }
+  a.item:hover{ opacity:0.8; }
+  .hero-contact .item .dot{
+    width:28px; height:28px; border-radius:50%;
+    border:1px solid var(--gold-onDark); display:flex; align-items:center; justify-content:center;
+    color:var(--gold-onDark); flex-shrink:0;
+  }
+  .hero-contact .item strong{ color:var(--cream); display:block; font-weight:600; font-size:13px; }
+
+  .hero-bottom{ padding-top:36px; padding-bottom:150px; }
+
+  /* photo with gold halo */
+  .hero-photo-wrap{ position:relative; display:flex; justify-content:center; align-items:flex-start; }
+  .halo{
+    position:absolute; top:6%; right:6%; width:78%; height:78%;
+    background:radial-gradient(circle, rgba(201,161,90,0.42) 0%, rgba(201,161,90,0.12) 55%, transparent 72%);
+    filter: blur(4px);
+    z-index:0;
+  }
+  /* FOTO: substitua o conteúdo de .hero-photo por
+     <img src="pollyana.jpg" alt="Pollyana Valença" style="width:100%;height:100%;object-fit:cover;"> */
+  .hero-photo{
+    position:relative; z-index:1;
+    width:min(340px, 100%); aspect-ratio:3/4;
+    border-radius:var(--radius) var(--radius) 0 0;
+    background:linear-gradient(180deg, #33191E, #1D0F12);
+    border:1px solid var(--line-dark);
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px;
+    text-align:center; padding:24px;
+  }
+  .hero-photo svg{ width:44px; height:44px; opacity:0.6; }
+  .ph-label{ font-family:'JetBrains Mono', monospace; font-size:10.5px; letter-spacing:0.06em; text-transform:uppercase; color:var(--cream-dim); line-height:1.8; }
+  .ph-label strong{ display:block; color:var(--gold-onDark); font-size:12px; }
+
+  .accent-dashes{ position:absolute; top:20%; left:45%; z-index:2; opacity:0.85; }
+  @media (max-width:900px){ .accent-dashes{ display:none; } .hero-photo-wrap{ order:-1; } }
+
+  /* ---------- FLOATING TRUST CARDS ---------- */
+  .trust-strip{ position:relative; z-index:5; margin-top:-104px; }
+  @media (max-width:900px){ .trust-strip{ margin-top:-70px; } }
+  @media (max-width:640px){ .trust-strip{ margin-top:0; padding-top:36px; } }
+
+  .trust-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; }
+  @media (max-width:900px){ .trust-grid{ grid-template-columns:repeat(3,1fr); gap:14px; } }
+  @media (max-width:640px){ .trust-grid{ grid-template-columns:1fr; gap:16px; } }
+
+  .trust-card{
+    background:var(--cream); color:var(--ink);
+    border-radius:var(--radius);
+    padding:26px 22px;
+    box-shadow:var(--shadow);
+  }
+  .trust-icon{
+    width:48px; height:48px; border-radius:50%;
+    background:var(--wine-deep);
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:16px;
+  }
+  .trust-icon svg{ width:22px; height:22px; stroke:var(--gold-onDark); }
+  .trust-card h3{ font-size:16.5px; color:var(--ink); margin-bottom:6px; }
+  .trust-card p{ font-size:13.5px; color:var(--ink-soft); margin:0; }
+
+  /* ---------- SECTION SHARED ---------- */
+  section{ padding:88px 0; }
+  @media (max-width:640px){ section{ padding:64px 0; } }
+  .section-head{ max-width:620px; }
+  .section-head h2{ font-size:clamp(26px, 3.6vw, 36px); line-height:1.18; margin-top:6px; }
+  .section-head.center{ max-width:640px; margin:0 auto; text-align:center; }
+
+  /* ---------- AREAS DE ATUAÇÃO ---------- */
+  .areas-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:44px; }
+  @media (max-width:1024px){ .areas-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:480px){ .areas-grid{ grid-template-columns:1fr; } }
+  .area-card{
+    background:var(--cream); border:1px solid var(--line);
+    border-radius:var(--radius); padding:28px 22px;
+    transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    text-decoration:none; color:inherit; display:block;
+  }
+  .area-card:hover{ transform:translateY(-4px); box-shadow:var(--shadow-soft); border-color:var(--gold); }
+  .area-icon{
+    width:46px; height:46px; border-radius:50%; background:var(--gold);
+    display:flex; align-items:center; justify-content:center; margin-bottom:16px;
+  }
+  .area-icon svg{ width:21px; height:21px; stroke:var(--ink); }
+  .area-card h3{ font-size:17px; margin-bottom:8px; }
+  .area-card p{ font-size:13.5px; color:var(--ink-soft); margin:0; }
+
+  /* ---------- ABOUT (mirrored blocks) ---------- */
+  .about-block{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:48px; align-items:center; }
+  .about-block.reverse{ grid-template-columns:1.15fr 0.85fr; }
+  .about-block.reverse .about-photo{ order:2; }
+  @media (max-width:860px){
+    .about-block, .about-block.reverse{ grid-template-columns:1fr; }
+    .about-block.reverse .about-photo{ order:0; }
+  }
+  .about-block + .about-block{ margin-top:72px; }
+
+  /* FOTO: substitua o conteúdo de .about-photo por
+     <img src="foto.jpg" alt="Pollyana Valença" style="width:100%;height:100%;object-fit:cover;"> */
+  .about-photo{
+    aspect-ratio:4/5;
+    border-radius:var(--radius);
+    background:var(--paper-alt);
+    border:1px solid var(--line);
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px;
+    text-align:center; padding:24px;
+  }
+  .about-photo svg{ width:38px; height:38px; opacity:0.5; stroke:var(--wine); }
+  .about-photo .ph-label{ color:var(--ink-soft); }
+  .about-photo .ph-label strong{ color:var(--wine); }
+
+  .about-text p{ font-size:15.5px; color:var(--ink-soft); margin:0 0 16px; }
+  .about-text p:last-child{ margin-bottom:0; }
+
+  /* ---------- QUOTE / AGENDAMENTO ---------- */
+  .quote{ background:var(--gold); color:var(--ink); border-radius:var(--radius); }
+  .quote-inner{ padding:48px 40px; }
+  @media (max-width:640px){ .quote-inner{ padding:36px 22px; } }
+  .quote h2{ color:var(--ink); text-align:center; font-size:clamp(24px,3.4vw,32px); margin-bottom:30px; }
+  .quote-form{ display:grid; grid-template-columns:1fr 1fr; gap:14px; max-width:760px; margin:0 auto; }
+  @media (max-width:640px){ .quote-form{ grid-template-columns:1fr; } }
+  .quote-form input, .quote-form select{
+    width:100%; padding:15px 18px; border-radius:var(--radius-sm);
+    border:1px solid rgba(43,18,22,0.2); background:var(--cream);
+    font-family:'Inter', sans-serif; font-size:14.5px; color:var(--ink);
+  }
+  .quote-form .full{ grid-column:1 / -1; }
+  .quote-form button{
+    width:100%; padding:16px; border:none; border-radius:var(--radius-sm);
+    background:var(--ink); color:var(--cream);
+    font-weight:700; font-size:14.5px; letter-spacing:0.02em; cursor:pointer;
+    transition:background .2s ease, transform .15s ease;
+  }
+  .quote-form button:hover{ background:#3A1E24; transform:translateY(-1px); }
+  .quote-note{ text-align:center; font-size:12px; color:rgba(43,18,22,0.6); margin-top:14px; font-family:'JetBrains Mono', monospace; }
+
+  /* ---------- PARA ESCRITÓRIOS (separate panel) ---------- */
+  .escritorios{ background:var(--paper-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .escritorios-badge{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--wine); color:var(--cream);
+    font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase;
+    padding:7px 14px; border-radius:100px; margin-bottom:18px;
+  }
+  .escritorios-head{ max-width:680px; margin-bottom:44px; }
+  .escritorios-head p.lead{ font-size:15.5px; color:var(--ink-soft); margin-top:14px; }
+
+  .svc-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; }
+  @media (max-width:860px){ .svc-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:480px){ .svc-grid{ grid-template-columns:1fr; } }
+  .svc-item{
+    background:var(--cream); padding:32px 24px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:12px;
+    transition:background .2s ease;
+  }
+  .svc-item:hover{ background:#FFF9EF; }
+  .svc-icon{
+    width:50px; height:50px; border-radius:50%; background:var(--gold);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .svc-icon svg{ width:22px; height:22px; stroke:var(--ink); }
+  .svc-item h3{ font-size:15.5px; color:var(--ink); }
+  .svc-item p{ font-size:13px; color:var(--ink-soft); margin:0; }
+  .svc-underline{ width:24px; height:2px; background:var(--wine); }
+
+  .escritorios-cta{ margin-top:36px; text-align:center; }
+
+  /* ---------- COMARCAS strip ---------- */
+  .comarcas{ display:flex; justify-content:center; gap:48px; row-gap:24px; flex-wrap:wrap; padding:44px 0; }
+  .comarcas .c-item{ font-family:'JetBrains Mono', monospace; font-size:12.5px; letter-spacing:0.06em; color:var(--ink-soft); text-transform:uppercase; text-align:center; }
+  .comarcas .c-item strong{ display:block; font-family:'Fraunces', serif; font-size:21px; color:var(--wine); text-transform:none; letter-spacing:0; font-weight:600; margin-bottom:4px; }
+
+  /* ---------- FOOTER ---------- */
+  footer{ padding:32px 0; background:var(--bg-dark); }
+  .footer-row{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; font-family:'JetBrains Mono', monospace; font-size:11.5px; color:var(--cream-dim); }
+  .footer-social{ display:flex; gap:16px; }
+  .footer-social a{ text-decoration:none; color:var(--cream-dim); transition:color .2s ease; }
+  .footer-social a:hover{ color:var(--gold-onDark); }
+
+  .wa-float{
+    position:fixed; bottom:18px; right:18px;
+    background:var(--wine); color:var(--cream);
+    width:54px; height:54px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    text-decoration:none; box-shadow:0 10px 24px rgba(43,18,22,0.35);
+    z-index:60; font-size:23px; border:1.5px solid var(--gold);
+    transition:transform .2s ease;
+  }
+  .wa-float:hover{ transform:scale(1.08); }
+
+  @media (max-width:480px){
+    .hero-contact{ gap:16px; }
+    .hero-bottom{ padding-bottom:110px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="#topo" class="brand">
+      <!-- LOGO: veja comentário no CSS (.brand-mark) -->
+      <span class="brand-mark">PV</span>
+      Pollyana Valença
+    </a>
+    <nav class="links">
+      <a class="nav-link" href="#areas">Áreas de Atuação</a>
+      <a class="nav-link" href="#sobre">Sobre</a>
+      <a class="nav-link" href="#escritorios">Para Escritórios</a>
+      <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5563991184494&text=Ol%C3%A1%20Pollyana%2C%20visitei%20seu%20site%20e%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">Agendar</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobilePanel">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="#areas">Áreas de Atuação</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#escritorios">Para Escritórios</a>
+    <a href="https://api.whatsapp.com/send?phone=5563991184494&text=Ol%C3%A1%20Pollyana%2C%20visitei%20seu%20site%20e%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">Agendar no WhatsApp</a>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="hero-eyebrow">OAB/TO 13.057 · Advocacia</span>
+        <h1>Seu direito, tratado com atenção <em>do início ao fim</em>.</h1>
+        <p class="lead">Atendimento em Direito Civil, Previdenciário, Trabalhista e de Família em Tocantins — com agilidade, clareza e acompanhamento próximo em cada etapa do seu caso.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5563991184494&text=Ol%C3%A1%20Pollyana%2C%20visitei%20seu%20site%20e%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">Agendar atendimento</a>
+          <a class="btn btn-outline" href="#areas">Áreas de atuação</a>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <div class="halo" aria-hidden="true"></div>
+        <svg class="accent-dashes" width="64" height="64" viewBox="0 0 70 70" fill="none">
+          <line x1="4" y1="66" x2="66" y2="4" stroke="#C9A15A" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 11"/>
+        </svg>
+        <div class="hero-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#E2C077" stroke-width="1.2">
+            <circle cx="12" cy="8" r="3.6"/>
+            <path d="M4.5 20c1.2-4 4-6 7.5-6s6.3 2 7.5 6"/>
+          </svg>
+          <span class="ph-label"><strong>Espaço para foto</strong>retrato vertical<br>substitua por &lt;img&gt;</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap hero-bottom">
+      <div class="hero-contact">
+        <a class="item" href="https://api.whatsapp.com/send?phone=5563991184494&text=Ol%C3%A1%20Pollyana%2C%20visitei%20seu%20site%20e%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">
+          <span class="dot">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h4l2 5-2.5 1.5a11 11 0 0 0 5 5L13 14l5 2v4a2 2 0 0 1-2 2C9 22 2 15 2 7a2 2 0 0 1 2-2Z"/></svg>
+          </span>
+          <span><strong>(63) 99118-4494</strong>WhatsApp</span>
+        </a>
+        <a class="item" href="https://www.instagram.com/pollyanavalenca_advogada/" target="_blank" rel="noopener">
+          <span class="dot">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor"/></svg>
+          </span>
+          <span><strong>@pollyanavalenca_advogada</strong>Instagram</span>
+        </a>
+        <span class="item" style="cursor:default;">
+          <span class="dot">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.3-7-11.5A7 7 0 0 1 19 9.5C19 14.7 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.2"/></svg>
+          </span>
+          <span>
+            <strong style="display:flex; gap:8px; flex-wrap:wrap;">
+              <a href="https://www.google.com/maps/search/?api=1&query=F%C3%B3rum+da+Comarca+de+Guara%C3%AD+TO" target="_blank" rel="noopener" style="color:var(--cream); text-decoration:underline; text-underline-offset:3px;">Guaraí</a> ·
+              <a href="https://www.google.com/maps/search/?api=1&query=F%C3%B3rum+da+Comarca+de+Palmas+TO" target="_blank" rel="noopener" style="color:var(--cream); text-decoration:underline; text-underline-offset:3px;">Palmas</a> ·
+              <a href="https://www.google.com/maps/search/?api=1&query=F%C3%B3rum+da+Comarca+de+Porto+Nacional+TO" target="_blank" rel="noopener" style="color:var(--cream); text-decoration:underline; text-underline-offset:3px;">Porto Nacional</a>
+            </strong>
+            Atendimento em TO — clique para ver no mapa
+          </span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST CARDS -->
+  <div class="wrap trust-strip">
+    <div class="trust-grid">
+      <div class="trust-card reveal d1">
+        <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.3-7-11.5A7 7 0 0 1 19 9.5C19 14.7 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.2"/></svg></div>
+        <h3>Atendimento próximo</h3>
+        <p>Contato direto, sem intermediários, do início ao fim do seu caso.</p>
+      </div>
+      <div class="trust-card reveal d2">
+        <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 5-3.4 8.4-7 9-3.6-.6-7-4-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Registro verificável</h3>
+        <p>Advogada inscrita na OAB/TO sob o nº 13.057.</p>
+      </div>
+      <div class="trust-card reveal d3">
+        <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <h3>Resposta ágil</h3>
+        <p>Retorno rápido pelo WhatsApp para dúvidas e atendimentos.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ÁREAS DE ATUAÇÃO -->
+  <section id="areas">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Áreas de atuação</span>
+        <h2>Onde posso te ajudar</h2>
+      </div>
+
+      <div class="areas-grid">
+        <a class="area-card reveal d1" href="https://api.whatsapp.com/send?phone=5563991184494&text=Ol%C3%A1%20Pollyana%2C%20gostaria%20de%20falar%20sobre%20uma%20quest%C3%A3o%20de%20Direito%20Civil%20(contratos%2C%20cobran%C3%A7as%20ou%20indeniza%C3%A7%C3%A3o)." target="_blank" rel="noopener">
+          <div class="area-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+          <h3>Direito Civil</h3>
+          <p>Contratos, cobranças, indenizações e questões cíveis do dia a dia.</p>
+        </a>
+        <a class="area-card reveal d2" href="https://api.whatsapp.com/send?phone=5563991184494&text=Ol%C3%A1%20Pollyana%2C%20gostaria%20de%20falar%20sobre%20um%20assunto%20de%20Direito%20Previdenci%C3%A1rio%20(aposentadoria%2C%20benef%C3%ADcio%20do%20INSS%20ou%20revis%C3%A3o)." target="_blank" rel="noopener">
+          <div class="area-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></div>
+          <h3>Direito Previdenciário</h3>
+          <p>Aposentadorias, benefícios do INSS e revisões junto à Previdência.</p>
+        </a>
+        <a class="area-card reveal d3" href="https://api.whatsapp.com/send?phone=5563991184494&text=Ol%C3%A1%20Pollyana%2C%20gostaria%20de%20falar%20sobre%20um%20assunto%20de%20Direito%20Trabalhista%20(rescis%C3%A3o%2C%20verbas%20ou%20a%C3%A7%C3%A3o%20trabalhista)." target="_blank" rel="noopener">
+          <div class="area-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg></div>
+          <h3>Direito Trabalhista</h3>
+          <p>Rescisões, verbas trabalhistas e ações na Justiça do Trabalho.</p>
+        </a>
+        <a class="area-card reveal d4" href="https://api.whatsapp.com/send?phone=5563991184494&text=Ol%C3%A1%20Pollyana%2C%20gostaria%20de%20falar%20sobre%20um%20assunto%20de%20Direito%20de%20Fam%C3%ADlia%20(div%C3%B3rcio%2C%20pens%C3%A3o%2C%20guarda%20ou%20invent%C3%A1rio)." target="_blank" rel="noopener">
+          <div class="area-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8.5" cy="8" r="2.6"/><circle cx="16" cy="8.5" r="2.1"/><path d="M3.5 20c.6-3.6 2.6-5.6 5.5-5.6s4.9 2 5.5 5.6M14.5 20c.4-2.6 1.8-4.2 3.8-4.2"/></svg></div>
+          <h3>Direito de Família</h3>
+          <p>Divórcio, pensão alimentícia, guarda e inventário.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" style="background:var(--paper-alt);">
+    <div class="wrap">
+
+      <div class="about-block reveal">
+        <div class="about-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.2"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20c1.2-4 4-6 7.5-6s6.3 2 7.5 6"/></svg>
+          <span class="ph-label"><strong>Espaço para foto</strong>substitua por &lt;img&gt;</span>
+        </div>
+        <div class="about-text">
+          <span class="eyebrow">Sobre</span>
+          <h2>Advocacia com atenção a cada detalhe do seu caso</h2>
+          <p>Pollyana Valença é advogada inscrita na OAB/TO sob o nº 13.057, atuando em Direito Civil, Previdenciário, Trabalhista e de Família em Tocantins.</p>
+          <p>Cada caso é acompanhado de perto, com linguagem clara e retorno rápido — para que você entenda cada etapa do seu processo, sem burocracia desnecessária.</p>
+        </div>
+      </div>
+
+      <div class="about-block reverse reveal">
+        <div class="about-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.2"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20c1.2-4 4-6 7.5-6s6.3 2 7.5 6"/></svg>
+          <span class="ph-label"><strong>Espaço para foto</strong>substitua por &lt;img&gt;</span>
+        </div>
+        <div class="about-text">
+          <span class="eyebrow">Como trabalho</span>
+          <h2>Contato direto, sem intermediários</h2>
+          <p>O primeiro contato é sempre pelo WhatsApp, de forma rápida e sem formalidade excessiva — você explica sua situação e recebe uma orientação clara sobre os próximos passos.</p>
+          <p>A partir daí, o acompanhamento é próximo, com atualizações sobre o andamento do seu processo.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AGENDAMENTO (clientes) -->
+  <section id="agendar">
+    <div class="wrap">
+      <div class="quote reveal">
+        <div class="quote-inner">
+          <span class="eyebrow" style="text-align:center; display:block; color:var(--ink); opacity:0.6;">Agendamento</span>
+          <h2>Agende seu atendimento em menos de um minuto</h2>
+          <form class="quote-form" id="quoteForm">
+            <input type="text" id="qNome" placeholder="Seu nome*" required>
+            <input type="tel" id="qTelefone" placeholder="Seu WhatsApp*" required>
+            <select id="qArea" required class="full">
+              <option value="" disabled selected>Área de interesse*</option>
+              <option>Direito Civil</option>
+              <option>Direito Previdenciário</option>
+              <option>Direito Trabalhista</option>
+              <option>Direito de Família</option>
+              <option>Outro assunto</option>
+            </select>
+            <div class="full">
+              <button type="submit">Enviar pelo WhatsApp</button>
+            </div>
+          </form>
+          <p class="quote-note">Ao enviar, o WhatsApp abre com sua mensagem pronta para Pollyana.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA ESCRITÓRIOS DE ADVOCACIA (separado) -->
+  <section class="escritorios on-dark" id="escritorios">
+    <div class="wrap">
+      <div class="escritorios-head reveal">
+        <span class="escritorios-badge">Área exclusiva para escritórios</span>
+        <h2>Correspondente jurídica em Tocantins</h2>
+        <p class="lead">Além do atendimento a clientes, Pollyana também atua como correspondente jurídica, dando suporte a escritórios de advocacia de fora da comarca que precisam de agilidade em cópias, protocolos e diligências.</p>
+      </div>
+
+      <div class="svc-grid reveal">
+        <div class="svc-item">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5"/></svg></div>
+          <div class="svc-underline"></div>
+          <h3>Protocolos</h3>
+          <p>Protocolo de petições e documentos em fóruns e cartórios.</p>
+        </div>
+        <div class="svc-item">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="7" width="13" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-2"/></svg></div>
+          <div class="svc-underline"></div>
+          <h3>Cópias</h3>
+          <p>Reprodução de peças processuais com prazo cumprido.</p>
+        </div>
+        <div class="svc-item">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.3-7-11.5A7 7 0 0 1 19 9.5C19 14.7 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.2"/></svg></div>
+          <div class="svc-underline"></div>
+          <h3>Diligências</h3>
+          <p>Apoio presencial pontual nas comarcas atendidas.</p>
+        </div>
+        <div class="svc-item">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7l9-4 9 4-9 4-9-4Z"/><path d="M3 7v10l9 4 9-4V7"/></svg></div>
+          <div class="svc-underline"></div>
+          <h3>Retirada e entrega</h3>
+          <p>Retirada e entrega de autos e documentos físicos.</p>
+        </div>
+        <div class="svc-item">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <div class="svc-underline"></div>
+          <h3>Acompanhamento de prazos</h3>
+          <p>Controle de prazos processuais em andamento.</p>
+        </div>
+        <div class="svc-item">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg></div>
+          <div class="svc-underline"></div>
+          <h3>Suporte a escritórios</h3>
+          <p>Apoio a escritórios que atuam fora da comarca.</p>
+        </div>
+      </div>
+
+      <div class="escritorios-cta reveal">
+        <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5563991184494&text=Ol%C3%A1%20Pollyana%2C%20sou%20de%20um%20escrit%C3%B3rio%20de%20advocacia%20e%20preciso%20de%20suporte%20como%20correspondente%20jur%C3%ADdica." target="_blank" rel="noopener">Solicitar correspondente jurídica</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMARCAS -->
+  <div class="wrap" id="comarcas">
+    <div class="comarcas reveal">
+      <div class="c-item"><strong>Guaraí</strong>Comarca — TO</div>
+      <div class="c-item"><strong>Palmas</strong>Comarca — TO</div>
+      <div class="c-item"><strong>Porto Nacional</strong>Comarca — TO</div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <span>© <span id="year"></span> Pollyana Valença · OAB/TO 13.057</span>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/pollyanavalenca_advogada/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://br.linkedin.com/in/pollyana-valença-69181b1a7" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://api.whatsapp.com/send?phone=5563991184494&text=Ol%C3%A1%20Pollyana%2C%20visitei%20seu%20site%20e%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">☎</a>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* mobile menu */
+  var menuToggle = document.getElementById('menuToggle');
+  var mobilePanel = document.getElementById('mobilePanel');
+  menuToggle.addEventListener('click', function(){
+    var isOpen = mobilePanel.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  mobilePanel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      mobilePanel.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* scroll reveal */
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('in-view'); });
+  }
+
+  /* quote form -> whatsapp */
+  var form = document.getElementById('quoteForm');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var nome = document.getElementById('qNome').value.trim();
+    var tel = document.getElementById('qTelefone').value.trim();
+    var area = document.getElementById('qArea').value;
+
+    var msg = 'Olá Pollyana! Meu nome é ' + nome +
+      '. Gostaria de agendar um atendimento sobre ' + area +
+      '. Meu WhatsApp: ' + tel;
+
+    var url = 'https://api.whatsapp.com/send?phone=5563991184494&text=' + encodeURIComponent(msg);
+    window.open(url, '_blank');
+  });
+</script>
+
+</body>
+</html>
