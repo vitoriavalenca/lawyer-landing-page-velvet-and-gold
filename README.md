@@ -1,10 +1,10 @@
 # Pollyana Valença — Advocacia
 
-Landing page de Pollyana Valença, advogada (OAB/TO 13.057) atuando em Direito Civil, Previdenciário, Trabalhista e de Família em Tocantins. Inclui uma seção separada para escritórios de advocacia que precisam de correspondente jurídica (protocolos, cópias e diligências) em Guaraí, Palmas e Porto Nacional.
+Landing page de Pollyana Valença, advogada atuando em Direito Civil, Previdenciário, Trabalhista e de Família em Tocantins. Inclui uma seção separada para escritórios de advocacia que precisam de correspondente jurídica (protocolos, cópias e diligências) em Guaraí, Palmas e Porto Nacional.
 
 ## Stack
 
-HTML, CSS e JS puros — sem build, sem dependências. Um único arquivo `index.html`.
+HTML, CSS e JS puros. Um único arquivo `index.html`.
 
 ## Deploy
 
